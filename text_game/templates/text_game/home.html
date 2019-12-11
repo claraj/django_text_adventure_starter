@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- For d -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+
+    <script>
+        let loadGameUrl = "{% url 'load_game' %}"
+        let actionURL = "{% url 'user_action' %}"
+    </script>
+    <script async defer src="{% static 'js/game.js' %}"></script>
+    
+</head>
+
+<body>
+
+    <h1>Game</h1>
+
+    <div>
+
+        <!-- TODO customize the elements that are displayed, for example, include player's name, 
+            their health, other stats, more than two choices.... -->
+
+        <h2 id="question"></h2>
+
+        <p id="message"></p>
+
+        <div>
+            <button id="choice-1"></button>
+            <button id="choice-2"></button>
+        </div>
+
+</body>
+
+
+</html>
