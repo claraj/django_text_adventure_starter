@@ -4,7 +4,9 @@
 <html>
 <head>
 
-    <!-- For d -->
+    <!-- For extracting the csrf_token from the browser cookie. 
+     can do it fairly easily with our JavaScript but this is even easier
+     When making POST requests, the browser must send the csrf_token back to the server for security reasons  -->
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 
     <script>
